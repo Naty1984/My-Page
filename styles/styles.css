@@ -1,0 +1,210 @@
+html{
+    scroll-behavior:smooth ;
+}
+body{
+    font-family: 'Roboto', sans-serif;    
+    color: black;
+    font-size: 20px;
+    margin:0;
+}
+
+
+
+section{
+    background-color: #00000075;
+    height: 100%;
+}
+
+.header{
+    background-color: #03032b;
+    height: 55px;
+    position:fixed;
+    top:0;
+    width: 100%; 
+    display: flex;
+
+    
+}
+
+.header-item{
+    font-size: 20px;
+    font-weight: 500;
+    margin:20px;
+    color:black;
+    text-decoration: none;
+}
+
+#about{
+    background-image:url("../images/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+.hr{
+    margin-top: 30px;
+}
+
+.home{
+    font-size: 20px;
+    color:#a14c4c;
+    position: absolute;
+    right: 15px;
+    margin:20px;
+    font-weight: 500;
+
+}
+
+
+.container{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.container2{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.title{
+    color:#632222;
+    font-size:100px;
+    text-align: center;
+}
+.menu {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    opacity: 0.5;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;  
+
+    
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 10px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: teal;
+    color: black
+}
+
+.img-courses {
+    height: 170px;
+    width: 200px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+}
+
+.img-courses:hover {
+    transform: scale(1.2);
+    rotate: (-2deg);
+}
+
+a {
+    color:teal;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.subtitle{
+    padding: 8%;
+    font-size: 80%;
+    text-align: center;
+    color:#970b58
+}
+
+.my-photo{
+    border-radius: 50%;
+    width: 30%;
+    margin:auto;
+    border:#b1158fba solid 4px;
+}
+.contacts{
+    margin-top: 30px;
+
+}
+
+.contacts a{
+    color:blueviolet;
+    font-size: 30px;
+    margin: 5px;
+}
+
+#skills{
+    background-image: linear-gradient(to bottom, #4c5a6f, #6e6287, #9e648c, #ca6879, #de7b58);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#courses{
+    background-image: linear-gradient(to top, #4c5a6f, #6e6287, #9e648c, #ca6879, #de7b58);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
+
+}
+
+
+.skill-item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.skill-title{
+    font-size:20px;
+    font-weight: 500;
+    width: 100px;
+}
+
+/**grid**/
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.courses wrapper{
+    font-display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.courses-content{
+    text-align: justify;
+    padding: 5%;
+}
+
+.courses-content a{
+    color:#d60e40;
+    text-decoration: none;
+    font-weight: 500;
+}
+.course-content:hover {
+    -webkit-box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
+    box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
+    width: 105%;
+    height: 105%;
+    background: #964141;
+    z-index: 10;
+}
