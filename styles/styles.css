@@ -113,11 +113,12 @@ section{
 }
 
 
-a {
-    color:teal;
+a.header-item {
+    color:rgb(61, 34, 88);
     text-decoration: none;
     
 }
+
 
 a:hover {
     text-decoration: underline;
@@ -125,7 +126,7 @@ a:hover {
 
 .subtitle{
     padding: 8%;
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
     color:#970b58
 }
