@@ -45,3 +45,8 @@
 .progress-100{
     width: 100%;
 }
+@media(max-width:760px){
+    .progress-bar{
+        width: 75%;
+    }
+}

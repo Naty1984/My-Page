@@ -21,11 +21,16 @@ header {
     height: 55px;
     position: fixed;
     top: 0;
+    z-index: 20;
     
 }
 
+.all-items{
+    padding: 15px;
+}
+
 .header-item {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin: 20px;
     color:purple;
@@ -105,7 +110,7 @@ hr {
     background-image: linear-gradient(to top, #520655, #5f1b70, #6a2e8e, #7141ad, #7455cd);
     background-repeat: no-repeat;
     background-size: cover;
-    height:300vh;
+    height:auto;
 }
 
 .container2 {
@@ -124,6 +129,15 @@ hr {
     font-weight: 500;
     width: 100px;
 }
+
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
 
 /** grid **/
 .wrapper {
@@ -162,4 +176,107 @@ hr {
     height: 105%;
     background: #ad79c5;
     z-index: 10;
+}
+@media (max-width: 760px) {
+    body {
+        font-size: 14px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .container {
+        width: 80%;
+        padding-top: 20%;
+    }
+
+    .container p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .header-item {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .all-items {
+        margin: auto;
+    }
+
+    .my-photo {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    .title {
+        font-size: 32px
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subtitle {
+         padding: 27% 8% 8% 8%;
+    }
+
+    .skill-title {
+        font-size: 16px;
+    }
+
+    #courses {
+        height: auto;
+    }
+
+    .courses .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course-content {
+        padding: 0;
+    }
+
+    .course-content:hover {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .course-content:last-child {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 568px){
+    .header-item {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .container p {
+        font-size: 13px;
+    }
+
+    .contacts {
+        margin-top: 0;
+        display: flex;
+    }
+
+    .contacts a {
+        margin: 13px 0 0 13px;
+        font-size: 27px;
+    }
 }
