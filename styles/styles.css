@@ -166,7 +166,7 @@ hr {
     width: 200px;
     object-fit: cover;
     object-position: left bottom;
-    transition: transform 500ms;
+    
 }
 .course-content:hover {
     -webkit-box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
@@ -175,8 +175,46 @@ hr {
     width: 105%;
     height: 105%;
     background: #ad79c5;
-    z-index: 10;
+    z-index: 10; 
 }
+
+.flip-card {
+   
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back {  
+    background-color: #eac2c2; 
+    color:#520655;
+    margin-top: auto; 
+    transform: rotateY(180deg);
+    text-align: justify;
+  }
+
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 @media (max-width: 760px) {
     body {
         font-size: 14px;
@@ -258,6 +296,7 @@ hr {
     }
 
 }
+
 
 @media (max-width: 568px){
     .header-item {
