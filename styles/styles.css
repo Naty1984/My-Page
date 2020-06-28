@@ -168,53 +168,52 @@ hr {
     object-position: left bottom;
     
 }
-.course-content:hover {
-    -webkit-box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
-    box-shadow: 7px 11px 28px 5px rgba(0,0,0,0.75);
-    width: 105%;
-    height: 105%;
-    background: #ad79c5;
-    z-index: 10; 
-}
 
 .flip-card {
-   
-    width: 300px;
+    background-color: #5f1b70;
+    color: #ffff;
+    max-width: 300px;
     height: 300px;
     perspective: 1000px;
-  }
+    padding: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+}
+.flip-card p a {
+    color: #ffff;
+    text-decoration: none;
+}
 
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.flip-card:hover {
+    background-color: #5f1b70;
+}
+
+.flip-card:last-child {
+    margin-bottom: 10%;
+}
+
+.flip-card-inner {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
+}
 
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
+}
 
-  .flip-card-back {  
-    background-color: #eac2c2; 
-    color:#520655;
-    margin-top: auto; 
-    transform: rotateY(180deg);
-    text-align: justify;
-  }
-
-  .flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    text-align: center;    
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
 @media (max-width: 760px) {
     body {
         font-size: 14px;
@@ -301,6 +300,9 @@ hr {
 @media (max-width: 568px){
     .header-item {
         font-size: 16px;
+    }
+    .all-items {
+     padding: 4px;
     }
     .title {
         font-size: 25px;
